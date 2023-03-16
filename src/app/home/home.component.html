@@ -1,0 +1,64 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="p-profile">
+          <img src="./../../assets/img/dummy.webp" />
+        </div>
+      </div>
+      <div class="col-sm-7 p-rgt-sec">
+        <div>
+          <span class="p-tag">Anime</span>
+          <h1 class="mt-4">Aletta</h1>
+          <p class="p-des mt-3 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum 80.
+          </p>
+          <a href="#" class="p-readmore"
+            >Read More<img
+              src="./../../assets/img/play.png"
+              alt="The icon for read more arrow"
+              width="20"
+              class="ml-2"
+          /></a>
+        </div>
+        <div class="row">
+          <h6>Subscribe to our Newsletter</h6>
+          <form class="form-inline" autocomplete="off">
+            <div class="form-group p-flex">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="enter your email here"
+                autocomplete="off"
+              />
+
+              <button
+                [@openClose]="isOpen ? 'open' : 'closed'"
+                class="open-close-container"
+                class="btn btn-warning"
+                (click)="toggle()"
+              >
+                {{ isOpen ? "Submit" : "Submitted" }}
+              </button>
+              <!-- <span
+                [@openClose]="isOpen ? 'open' : 'closed'"
+                class="open-close-container"
+              >
+                <p>The box is now {{ isOpen ? "Open" : "Closed" }}!</p>
+              </span> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
